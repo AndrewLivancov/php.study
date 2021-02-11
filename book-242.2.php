@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php
+function generator()
+{
+	yield 1;
+	yield from [2,3];
+}
+
+foreach(generator() as $i) echo "$i ";
+  ?>
+</body>
+</html>
