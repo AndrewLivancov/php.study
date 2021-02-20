@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php
+$ini = parse_ini_file("file.ini", true);
+echo "<pre>"; print_r($ini); echo "</pre>";
+echo "Chip: {$ini['File Settings'] ['Chip']}";
+  ?>
+</body>
+</html>
